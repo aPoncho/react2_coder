@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount.jsx'
+import './Item.css'
 
 export default function Item({id, name, price, stock}) {
   return (

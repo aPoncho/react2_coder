@@ -1,4 +1,49 @@
-button {
-    margin: 5px;
-    padding: 10px; 
+.item-counter-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-counter {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.item-counter button {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: var(--main-1);
+    padding: 0.5rem;
+    border-radius: 0.15rem;
+    width: 4rem;
+    color: var(--main-bg);
+    border: none;
+}
+
+.item-counter button:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+}
+
+.item-counter span {
+    font-size: 2rem;
+    width: 6rem;
+    color: var(--text-color);
+    background-color: var(--main-bg);
+}
+
+.item-counter-container div {
+    margin: 0.5rem;
+}
+
+.btn-add-cart {
+    width: 12rem;
+    padding: 0.8rem;
+    border-radius: 0.15rem;
+    background-color: var(--main-1);
+    color: var(--main-bg);
+    border: none;
+}
+
+.btn-add-cart:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
 }

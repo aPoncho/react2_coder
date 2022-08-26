@@ -15,13 +15,15 @@ export default function ItemCount({stock, initial, onAdd}) {
     }
 
   return (
-    <>
-        <h1>{count}</h1>
+    <div className='item-counter-container'>
+        <div className='item-counter'>
         <button onClick={addCount}>+</button>
+        <span>{count}</span>
         <button onClick={subsCount}>-</button>
-        <div>
-            <button onClick={()=> {onAdd(count)}}>Agregar al carrito</button>
         </div>
-    </>
+        <div>
+            <button className='btn-add-cart' onClick={()=> {onAdd(count)}}>Agregar al carrito</button>
+        </div>
+    </div>
   )
 }
