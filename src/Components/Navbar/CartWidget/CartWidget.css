@@ -1,3 +1,7 @@
 div {
     width: fit-content;
 }
+
+.cart-icon {
+    height: 10px;
+}

@@ -4,7 +4,7 @@ import cart from './cart-icon.png'
 export default function CartWidget() {
   return (
     <div>
-        <img src={cart} alt="cart icon"/>
+        <img className='cart-icon' src={cart} alt="cart icon"/>
     </div>
   )
 }
