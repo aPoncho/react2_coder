@@ -11,7 +11,6 @@ export default function Item({id, name, price, stock}) {
         <span>Valor: {price}</span>
         <span>Stock: {stock}</span>
         <Link to={`/item/${id}`}>Ver mas</Link>
-        <ItemCount stock={stock} initial={1}/>
     </div>
   )
 }
