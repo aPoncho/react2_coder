@@ -2,17 +2,16 @@ import React from 'react';
 import './Navbar.css';
 import './CartWidget/CartWidget.jsx'
 import CartWidget from './CartWidget/CartWidget.jsx';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <div className='navBar'>
-        <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#Nosotros">Nosotros</a></li>
-                <li><a href="#Productos">Productos</a></li>
-                <li><a href="#Login">Login</a></li>
+                <NavLink to="/" className='navlink'>Home</NavLink>
+                <NavLink to="/Nosotros" className='navlink'>Nosotros</NavLink>
+                <NavLink to="/Productos" className='navlink'>Productos</NavLink>
+                <NavLink to="/Login" className='navlink'>Login</NavLink>
                 <CartWidget/>
-        </ul>
     </div>
   )
 }

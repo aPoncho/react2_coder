@@ -1,13 +1,29 @@
 .card-container {
     width: 18rem;
-    border-radius: 0.3rem;
-    padding: 1rem;
+    border-radius: 0.7rem;
+    padding: 0.2rem;
     display: flex;
     flex-direction: column;
     background-color: var(--main-bg-2);
-    box-shadow: 0 7px 30px -10px rgb(150,170,180, 0.8);
+    box-shadow: 0 7px 30px -10px rgba(83, 94, 99, 0.8);
+    transition: all 0.2s ease-out;
 }
 
-.item-counter {
+.card-container:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+    0 24px 46px var(--box-shadow-color);
+}
 
+.card-container span {
+    color: var(--detail-color);
+}
+
+.detail-link {
+    display: block;
+    text-decoration: none;
+    background-color: var(--main-1);
+    padding: 0.5rem;
+    margin: 1rem 2rem 1rem 2rem;
+    border-radius: 0.5rem;
 }

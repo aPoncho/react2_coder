@@ -1,24 +1,25 @@
-ul {
-    list-style-type: none;
+.navBar {
     margin: 0;
-    padding: 0;
+    padding: 0.5rem;
     overflow: hidden;
     background-color: var(--main-1);
     display: flex;
     justify-content: flex-end;
+    
 }
   
   
-li a {
+.navlink {
     display: block;
-    color: var(--main-bg);
+    color: var(--title-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: all 0.1s ease-out;
 }
   
   
-li a:hover {
+.navlink:hover {
     background-color: var(--main-bg-2);
     color: var(--text-color);
 }
