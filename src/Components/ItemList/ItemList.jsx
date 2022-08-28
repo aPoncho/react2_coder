@@ -6,7 +6,7 @@ export default function ItemList({items}) {
   return (
     <div className='item-list'>
         {items.map((item, index)=>
-            <Item key={index} id={item.id} name={item.name} price={item.price} stock={item.stock}/>
+            <Item key={index} id={item.id} name={item.name} price={item.price} stock={item.stock} img={item.img}/>
             )}
     </div>
   )

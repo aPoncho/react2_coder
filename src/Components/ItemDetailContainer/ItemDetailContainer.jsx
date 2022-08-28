@@ -15,7 +15,7 @@ export default function ItemDetailContainer() {
     new Promise((resolve) => {
       
       setTimeout(()=> {
-        resolve(products.find((element)=> element.id === id))
+        resolve(products.find((element)=> element.id == id))
       }, 2000)
 
     }).then((data)=>{

@@ -1,3 +1,12 @@
+@keyframes hover-menu {
+    from {
+        color: var(--main-1);
+    }
+    to {
+        color: var(--title-color);
+    }
+}
+
 .navBar {
     margin: 0;
     padding: 0.5rem;
@@ -10,16 +19,34 @@
   
   
 .navlink {
-    display: block;
+    text-decoration: none;
+    list-style: none;
     color: var(--title-color);
+    position: relative;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-    transition: all 0.1s ease-out;
+}
+
+.navlink::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: var(--title-color);
+    bottom: -0.5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: ease-in-out 250ms;
+}
+
+.navlink:hover::before{
+    transform: scale(1, 1);
 }
   
   
 .navlink:hover {
-    background-color: var(--main-bg-2);
-    color: var(--text-color);
+    animation: hover-menu;
+    animation-duration: 0.5s;
+    color: var(--title-color);
 }

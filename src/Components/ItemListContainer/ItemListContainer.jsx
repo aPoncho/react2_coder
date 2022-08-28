@@ -18,7 +18,7 @@ export default function ItemListContainer(props) {
             let productsFiltered = [];
 
             setTimeout(() => {
-                productsFiltered = categoryid ? products.filter((element)=> element.category === categoryid) : products
+                productsFiltered = categoryid ? products.filter((element)=> element.category == categoryid) : products
                resolve(productsFiltered); 
             }, 2000)
             
