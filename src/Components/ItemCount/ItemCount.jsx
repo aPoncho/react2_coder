@@ -22,7 +22,7 @@ export default function ItemCount({stock, initial, onAdd}) {
         <button onClick={subsCount}>-</button>
         </div>
         <div>
-            <button className='btn-add-cart' onClick={()=> {onAdd(count)}}>Agregar al carrito</button>
+            <button className='btn-add-cart' onClick={() => onAdd(count)}>Agregar al carrito</button>
         </div>
     </div>
   )
