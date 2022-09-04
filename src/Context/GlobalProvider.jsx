@@ -8,7 +8,7 @@ const GlobalProvider = ({children}) => {
 
 
   return (
-    <GlobalContext.Provider value={{itemQty}}>
+    <GlobalContext.Provider>
         {children}
     </GlobalContext.Provider>
   )
