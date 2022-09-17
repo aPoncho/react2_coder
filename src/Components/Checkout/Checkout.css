@@ -1,0 +1,8 @@
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 0.2rem;
+}

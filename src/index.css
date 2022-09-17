@@ -1,5 +1,6 @@
 * {
   color: var(--text-color);
+  list-style: none;
 }
 
 body {

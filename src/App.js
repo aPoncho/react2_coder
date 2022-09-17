@@ -14,7 +14,7 @@ function App() {
           <Navbar/>
           <Rutas/>
         </BrowserRouter>
-      </GlobalProvider>    
+      </GlobalProvider>     
     </div>
   );
 }
