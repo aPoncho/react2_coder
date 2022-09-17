@@ -15,8 +15,15 @@ const [cartList, setCartList] = useState([ ])
 //funcion, recibe un item y lo agrega al carrito(cartList)
 const addToCart = (item, qty) => {
   item.qty = qty
-  setCartList([...cartList, item])
-  console.log(cartList)
+  // console.log(item, cartList)
+  const itemInList = cartList.find(element => element.id === element.id)
+  if (itemInList) {
+    const updatedQty = itemInList.qty + item.qty
+    const index = cartList.indexOf(itemInList)
+    cartList[index].qty = updatedQty
+  } else {
+    setCartList([...cartList, item])
+  }
 }
 
 
