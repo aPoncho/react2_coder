@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function Cart() {
 
 const {cartList, resetCart, removeItem} = useContext(GlobalContext)
-
+const sumAll = cartList.map(item => item.qty).reduce((prev, curr) => prev + curr, 0);
 
   return (
     <div>
@@ -22,10 +22,15 @@ const {cartList, resetCart, removeItem} = useContext(GlobalContext)
               )
             }
           </ul>
+          <h3>Cantidad de Items: {sumAll}</h3>
           <button onClick={resetCart}>Vaciar carrito</button>
           <Link to='/checkout'><button>Terminar compra</button></Link>         
         </div>
-        : <h1>Carrito Vacio</h1>}
+        :
+        <div> 
+        <h1>Carrito Vacio</h1>
+        <Link to='/'><button>Volver al Inicio</button></Link>
+        </div>}
     </div>
   )
 }

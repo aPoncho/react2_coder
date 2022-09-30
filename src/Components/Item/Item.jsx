@@ -3,6 +3,9 @@ import './Item.css'
 import {Link} from 'react-router-dom';
 
 export default function Item({id, name, price, stock, img}) {
+
+
+
   return (
     <div className="card-container">
         <img src={img} alt="" srcset=""/>
